@@ -8,6 +8,9 @@ __pycache__/
 
 # Distribution / packaging
 .Python
+*.pyc
+venv/*
+logs/*
 build/
 develop-eggs/
 dist/
@@ -23,6 +26,7 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+fabfile.py
 MANIFEST
 
 # PyInstaller
