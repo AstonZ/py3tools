@@ -56,10 +56,10 @@ def bear_eat():
 def squre_trees():
     '''
     观察发现方阵排列规律，
-    第x层的边长：x_side = x + 2
-    第x层的数量: x_num = 4 + ((x-1)*4)
-    x层总数： x_total = (x+2)²
-    最外层60棵，得出最外是14层, 边长16，总数256
+    第x层的边长：x_side = 2 * x
+    第x层的数量: x_num =  (x*4) - 4
+    x层总数： x_total = (2*x)²
+    最外层60棵，则共8层, 边长16，总数256
     '''
     pass
 
@@ -74,13 +74,59 @@ def square_size_add():
     dlog('square_size_add by delta: ' + str(delta))
     pass
 
+'''
+一件商品以9折出售，可以获得毛利10%，如果以原价出售，可以获得多少毛利？
+'''
+def good_profit():
+    '''
+    二元一次方程:
+    0.9*p - c = 0.1*c -> p = 1.22c
+    利润 = 0.22
+    '''
+    pass
+
+'''
+今年销售数量比去年多了25%，每台价格下降了20%，如果销售额为3000w元，去年销售额是？
+'''
+def tv_sell():
+    '''
+    1.25N * 0.8P = 3000, 求NP=3000/(1.25*0.8) = 3000
+    '''
+    pass
+
+
+'''
+赛车道400米，A一分钟2圈，B一分钟3圈，C一分钟4圈。
+几分钟后，三辆车子出发后第一次并排在起跑线。
+'''
+def car_circle():
+    '''
+    最小公倍数
+    sa=800,sb=1200,sc=1600
+    即几分钟后A,B,C之前的距离差刚好是400
+    短除法求最小公倍数，最小公倍数再除以最快车的速度，6
+    '''
+    pass
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 
 def math_questions():
-    square_size_add()
+    singel_seat()
 
 if __name__=='__main__':
     start_logging('beisen')
