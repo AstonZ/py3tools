@@ -2,7 +2,7 @@
 # 北森题目
 # https://max.book118.com/html/2017/0108/81535526.shtm
 from log_util import dlog, start_logging
-
+import math
 '''
 Q:160个人排成一列，每次取奇数，最后剩下1个数字是多少
 
@@ -63,12 +63,24 @@ def squre_trees():
     '''
     pass
 
+'''
+一个正方形的边长增加10%之后，面积增加多少
+可以举例计算，结果= 1.1 * 1.1 = 1.21
+'''
+def square_size_add():
+    side = 1
+    long_side = side * 1.1
+    delta = math.pow(long_side, 2)/(math.pow(side, 2))
+    dlog('square_size_add by delta: ' + str(delta))
+    pass
+
+
 
 
 
 
 def math_questions():
-    bear_eat()
+    square_size_add()
 
 if __name__=='__main__':
     start_logging('beisen')
