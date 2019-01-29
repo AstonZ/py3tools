@@ -1,5 +1,6 @@
 # encoding=utf-8
 # 北森题目
+# https://max.book118.com/html/2017/0108/81535526.shtm
 from log_util import dlog, start_logging
 
 '''
@@ -48,6 +49,20 @@ def bear_eat():
             print(day_count)
             break
         day_count += 1
+
+'''
+树林排列成方针，最外层的树是60棵，方阵一共有多少树。
+'''
+def squre_trees():
+    '''
+    观察发现方阵排列规律，
+    第x层的边长：x_side = x + 2
+    第x层的数量: x_num = 4 + ((x-1)*4)
+    x层总数： x_total = (x+2)²
+    最外层60棵，得出最外是14层, 边长16，总数256
+    '''
+    pass
+
 
 
 
